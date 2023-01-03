@@ -17,10 +17,85 @@
 
   <link rel="stylesheet" href="css/main.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-  
-</body>
+  <div id="navBar">
+    <img id="logoConversium" src="img/logoConversium.png" alt="logo conversium">
+    <div id="containerTexteNavBar">
+      <div>Accueil</div>
+      <div>Qui sommes-nous ?</div>
+      <div>Génération de lead</div>
+      <div>Développement web</div>
+      <div>Notre chatbot</div>
+    </div>
+    <div id="contactezNousNavBar">
+      <img id="phone" src="img/phone.png" alt="téléphone">
+      <div>Contactez nous</div>
+    </div>
+  </div>
 
+  <video id="backgroundVideo" src="img/background.mov" autoplay muted playsinline loop></video>
+  <div id="titreBackground">Vous aidez à atteindre vos objectifs et à développer votre activité, c’est notre métier</div>
+  <div id="paragrapheBackground">Avec Conversium, vous pouvez être sûr que votre entreprise sera mise en avant devant les bonnes personnes au bon moment.</div>
+
+  <div id="titrePage2">“Vous ne faites pas de buisness si vous n’avez pas de prospect”– <span>Zig Zigler</span></div>
+  <p id="paragraphePage2">Chez Conversium, nous sommes spécialisés dans la génération de leads de qualité pour les entreprises de tous les secteurs. Grâce à notre équipe d’experts en marketing et à notre utilisation de techniques de pointe, nous pouvons vous aider à atteindre vos objectifs de vente et à étendre votre base de clientèle.</p>
+
+  <div id="containerVignette">
+    <div id="vignette1"></div>
+    <script>
+      window.addEventListener('scroll', function() {
+        var element = document.querySelector('#vignette1');
+        var element2 = document.querySelector('#vignette2');
+        var element3 = document.querySelector('#vignette3');
+
+
+        var rect = element.getBoundingClientRect();
+        var rect2 = element2.getBoundingClientRect();
+        var rect3 = element3.getBoundingClientRect();
+
+        if (rect.top < window.innerHeight) {
+          element.classList.add('visible');
+        }
+
+        if (rect2.top < window.innerHeight) {
+          element2.classList.add('visible');
+        }
+
+        if (rect3.top < window.innerHeight) {
+          element3.classList.add('visible');
+        }
+      });
+    </script>
+    <div id="vignette2"></div>
+    <div id="vignette3"></div>
+  </div>
+
+  <div id="containerSolutions">
+    <h3 id="solutionTitre">Découvrez nos solutions</h3>
+    <div class="boutonEnSavoirPlus">En savoir plus <span>></span></div>
+  </div>
+
+  <div id="containerChatBot">
+    <div id="containerTexte">
+      <h2>Découvrez notre solution de chatBot sur mesure</h2>
+      <p>En utilisant des algorithmes avancés et des techniques de <span>traitement du langage naturel,</span> notre chatbots conçus pour la génération de leads peut simuler <span>une conversation humaine</span></p>
+      <div class="boutonEnSavoirPlus">En savoir plus <span>></span></div>
+    </div>
+    <img src="img/illustrationChatBot.png" alt="illustration chatBot">
+  </div>
+
+  <footer>
+    <img id="logoFooter" src="img/logoConversium.png" alt="logo conversium">
+    <div id="containerFooter">
+      <div id="localisation"><span>Localisation:</span> Paris : 10 Rue du colisee 75008</div>
+      <img id="logoLinkedin" src="img/logoLinkedin.png" alt="logo linkedin">
+      <div id="telephone"><span>Téléphone:</span> 01 80 88 60 00 </div>
+    </div>
+    <div id="copyright">Copyright © 2022 Conversium | Mentions légales</div>
+  </footer>
+</body>
 </html>
