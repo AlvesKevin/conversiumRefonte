@@ -4,6 +4,7 @@ html body{
   color: white;
   background-color: #0B0A0A;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 #navBar{
@@ -80,7 +81,6 @@ html body{
 
 #paragraphePage2{
   width: 80%;
-  height: 180px;
   font-size: 25px;
   margin: 0 auto;
   text-align: center;
@@ -88,7 +88,10 @@ html body{
 
 #containerVignette{
   width: 80%;
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 50px auto;
 }
 
 #vignette1{
@@ -142,6 +145,11 @@ html body{
   text-align: center;
   margin: 0 auto;
   font-size: 30px;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 #containerSolutions div{
@@ -172,10 +180,19 @@ html body{
   flex-wrap: wrap;
 }
 
+#containerChatBot p span{
+  color: #DDF164;
+}
+
 #containerTexte h2{
   font-weight: 500;
   font-size: 40px;
   width: 400px;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 #containerTexte p{
@@ -187,22 +204,431 @@ html body{
   float: right;
 }
 
-footer{
-  background-color: blueviolet;
-}
-
 #logoFooter{
   width: 330px;
   height: 50px;
+  display: block;
   margin: 0 auto;
-  background-color: #f0dcff;
+}
+
+#containerContact{
+  width: 790px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px auto;
+}
+
+#containerContact  span{
+  color: #DDF164;
 }
 
 
+#containerContact img{
+  width: 39px;
+  height: 39px;
+}
 
+#copyright{
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
 
+/*---------------- Qui sommes nous ? --------------*/
 
+#containerNotreHistoire{
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
 
+#containerNotreHistoire h2{
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
 
+#containerNotreHistoire p{
+  font-size: 23px;
+}
+
+#containerNotreHistoire img{
+  margin-top: 50px;
+}
+
+#containerNotreMission{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#containerNotreMission h2{
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+
+#containerNotreMission p{
+  font-size: 23px;
+}
+
+#containerTexteNotreMethodologie{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#containerTexteNotreMethodologie h2{
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+
+#containerTexteNotreMethodologie p{
+  font-size: 23px;
+}
+
+#containerMethodologie{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 100px auto;
+}
+
+.vignetteMethode{
+  width: 400px;
+  height: 445px;
+  background-color: #202022;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 10px;
+}
+
+.containerInterieurMethode{
+  padding-top: 80px;
+}
+
+.containerInterieurMethode div:nth-child(1){
+  font-size: 25px;
+}
+
+.vignetteMethode div{
+  width: 350px;
+  margin: 0 auto;
+}
+
+.vignetteMethode img{
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+/*------------------ Page génération de leads ---------------------*/
+
+#containerTexteGenerationLead{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#containerTexteGenerationLead h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#containerTexteGenerationLead p{
+  font-size: 23px;
+}
+
+#containerMethodeGenerationLead{
+  width: 70%;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#texteMethodeGenerationLead{
+  width: 860px;
+  font-size: 25px;
+  margin-right: 50px;
+}
+
+#containerVignetteGenerationLead{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.vignetteLead{
+  width: 375px;
+  height: 352px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #202022;
+}
+
+.containerTexteVignette{
+  width: 275px;
+  margin: 50px auto;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.containerTexteVignette p{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#contactGenerationLead{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#contactGenerationLead p{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#contactGenerationLead div{
+  margin: 80px auto;
+}
+
+/*------------------ Dev Web --------------------*/
+
+#texteTitreDevWeb{
+  width: 70%;
+  margin: 0 auto;
+}
+
+#texteTitreDevWeb h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#texteTitreDevWeb p{
+  font-size: 22px;
+}
+
+#texteDevWeb2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#containerVignetteDevWeb{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.vignetteWeb{
+  background: linear-gradient(102.61deg, #ADE1DB 0.67%, rgba(136, 183, 252, 0.76) 46.95%, rgba(227, 147, 255, 0.65) 93.24%);
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  height: 510px;
+}
+
+#containerVignetteDevWeb .vignetteWeb:nth-child(2){
+  background: linear-gradient(102.61deg, #E09C9C 0.67%, rgba(247, 250, 136, 0.76) 46.95%, rgba(147, 255, 209, 0.65) 93.24%);
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+#containerVignetteDevWeb .vignetteWeb:nth-child(3){
+  background: linear-gradient(102.61deg, #61D6C1 0.67%, rgba(66, 97, 204, 0.76) 46.95%, rgba(225, 81, 228, 0.65) 93.24%);
+  box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
+
+.vignetteWeb h2{
+  font-size: 50px;
+  font-weight: 500;
+  padding-top: 100px;
+  margin-left: 50px;
+}
+
+.vignetteWeb p{
+  font-size: 25px;
+  margin: 30px;
+}
+
+.vignetteWeb span{
+  font-size: 80px;
+}
+
+/*-------------------- Notre chatbot ----------------------*/
+
+#containerChatbot{
+  width: 70%;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#containerTexteChatbot{
+  width: 40%;
+}
+
+#containerTexteChatbot h1{
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#containerTexteChatbot p{
+  font-size: 23px;
+}
+
+#titreAventageChatbot{
+  width: 70%;
+  margin: 0 auto;
+  font-size: 40px;
+  font-weight: 500;
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+#containerAventageChatbot{
+  width: 68%;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#containerAventageChatbot div:nth-child(1){
+  background-image: url("/img/vignette1ChatBot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#containerAventageChatbot div:nth-child(1) p{
+  width: 400px;
+  margin: 100px auto;
+}
+
+#containerAventageChatbot div:nth-child(2){
+  background-image: url("/img/vignette2ChatBot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#containerAventageChatbot div:nth-child(2) p{
+  width: 600px;
+  margin: 100px auto;
+}
+
+#containerAventageChatbot div:nth-child(3){
+  background-image: url("/img/vignette3ChatBot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#containerAventageChatbot div:nth-child(3) p{
+  width: 600px;
+  margin: 100px auto;
+}
+
+#containerAventageChatbot div:nth-child(4){
+  background-image: url("/img/vignette4ChatBot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#containerAventageChatbot div:nth-child(4) p{
+  width: 400px;
+  margin: 100px auto;
+}
+
+#containerAventageChatbot div:nth-child(5){
+  background-image: url("/img/vignette5ChatBot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#containerAventageChatbot div:nth-child(5) p{
+  width: 400px;
+  margin: 100px auto;
+}
+
+#containerAventageChatbot div:nth-child(6){
+  background-image: url("/img/vignette6ChatBot.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#containerAventageChatbot div:nth-child(6) p{
+  width: 600px;
+  margin: 100px auto;
+}
+
+.vignetteAventagePetit{
+  width: 455px;
+  height: 450px;
+  margin-top: 40px;
+  font-size: 35px;
+}
+
+.vignetteAventagePetit span{
+  color: #DDF164;
+  font-size: 60px;
+}
+
+.vignetteAventageGrand{
+  width: 790px;
+  height: 450px;
+  margin-top: 40px;
+  font-size: 35px;
+}
+
+.vignetteAventageGrand span{
+  color: #DDF164;
+  font-size: 60px;
+}
 
 
