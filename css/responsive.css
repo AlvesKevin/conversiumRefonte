@@ -1,0 +1,134 @@
+/*---------------------- Home ----------------------*/
+
+@media (max-width: 1500px) {
+    #containerChatBot img {
+        display: none;
+    }
+
+    #vignette1 {
+        height: 500px;
+    }
+
+    #vignette2 {
+        height: 500px;
+        margin-top: 20px;
+    }
+
+    #vignette3 {
+        height: 560px;
+    }
+
+    #containerTexte {
+        width: 100%;
+    }
+
+    #containerTexte h2{
+        width: 50%;
+    }
+
+
+    #containerTexte p {
+        width: 100%;
+    }
+
+    #containerTexteNavBar {
+        display: none;
+    }
+
+    #logoConversium {
+        margin: 30px auto;
+        padding-left: 100px;
+    }
+
+    #contactezNousNavBar {
+        background-image: url("/img/burgerMenu.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 30px;
+        height: 20px;
+    }
+
+    #contactezNousNavBar img {
+        display: none;
+    }
+
+    #contactezNousNavBar div {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    #vignette1 {
+        height: 410px;
+    }
+
+    #vignette2 {
+        height: 410px;
+        margin-top: 20px;
+    }
+
+    #vignette3 {
+        height: 460px;
+    }
+}
+
+@media (max-width: 987px) {
+
+    #titreBackground{
+        width: 100%;
+        height: 180px;
+        font-weight: 500;
+        font-size: 30px;
+        text-align: center;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #paragrapheBackground{
+        width: 100%;
+        height: 76px;
+        font-size: 20px;
+        text-align: center;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #titrePage2{
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+    }
+
+    #paragraphePage2{
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    #backgroundVideo{
+        height: 90vh;
+    }
+
+    #vignette1 {
+        height: 350px;
+    }
+
+    #vignette2 {
+        height: 360px;
+        margin-top: 20px;
+    }
+
+    #vignette3 {
+        height: 380px;
+    }
+
+    #solutionTitre{
+        width: 100%;
+    }
+}
+
+/*------------------------ Qui sommes-nous -------------------------*/
