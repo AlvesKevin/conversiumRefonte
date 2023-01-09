@@ -333,7 +333,7 @@
 }
 
 
-/*------------------------ Generation de lead -------------------------*/
+/*------------------------ Developpement web -------------------------*/
 
 @media (max-width: 1380px) {
     .vignetteWeb h2 {
@@ -381,6 +381,18 @@
 
 @media (max-width: 413px) {
 
+    #texteTitreDevWeb h1{
+        font-size: 30px;
+    }
+
+    #texteTitreDevWeb p{
+        font-size: 15px;
+    }
+
+    #texteDevWeb2{
+        font-size: 30px;
+    }
+
     .vignetteWeb{
         height: 300px;
     }
@@ -398,6 +410,148 @@
         font-size: 10px;
     }
 }
+
+/*------------------------ chatbot -------------------------*/
+
+@media (max-width: 1867px) {
+    #containerAventageChatbot{
+        width: 80%;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .vignetteAventageGrand{
+        width: 455px;
+        height: 449px;
+    }
+
+    #containerAventageChatbot div:nth-child(2){
+        background-image: url("/img/vignette2Responsive.png");
+    }
+
+    #containerAventageChatbot div:nth-child(2) p{
+        width: 400px;
+        margin: 80px auto;
+    }
+
+    #containerAventageChatbot div:nth-child(3){
+        background-image: url("/img/vignette3Responsive.png");
+    }
+
+    #containerAventageChatbot div:nth-child(3) p{
+        width: 400px;
+        margin: 80px auto;
+    }
+
+    #containerAventageChatbot div:nth-child(6){
+        background-image: url("/img/vignette6Responsive.png");
+    }
+
+    #containerAventageChatbot div:nth-child(6) p{
+        width: 400px;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 1070px) {
+
+    #containerTexteChatbot{
+        width: 90%;
+    }
+
+    #containerChatbot img{
+        display: none;
+    }
+
+    #containerTexteChatbot h1{
+        width: 100%;
+    }
+
+    #containerTexteChatbot p{
+        width: 100%;
+    }
+
+    #containerAventageChatbot{
+        width: 70%;
+    }
+}
+
+@media (max-width: 520px) {
+    #containerAventageChatbot{
+        width: 100%;
+    }
+
+    .vignetteAventageGrand{
+        margin: 20px auto;
+    }
+
+    .vignetteAventagePetit{
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #containerTexteChatbot{
+        width: 100%;
+    }
+
+    #containerTexteChatbot h1{
+        font-size: 30px;
+    }
+
+    #containerTexteChatbot p{
+        font-size: 20px;
+    }
+
+    #titreAventageChatbot{
+        font-size: 30px;
+        width: 70%;
+    }
+}
+
+/*------------------------ chatbot -------------------------*/
+
+@media (max-width: 1700px) {
+
+    #containerCarteFormulaire{
+        width: 100%;
+    }
+
+    #containerCarte{
+        margin: 0 auto;
+    }
+
+    #containerFormulaire{
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 574px) {
+    #containerFormulaire{
+        width: 100%;
+        padding: 10px;
+    }
+
+    #carte{
+        width: 100%;
+    }
+
+    #containerFormulaire input{
+        width: 100%;
+    }
+
+    #containerFormulaire textarea{
+        width: 90%;
+    }
+
+    #buttonForm{
+        margin-top: 20px;
+    }
+
+}
+
 
 
 
