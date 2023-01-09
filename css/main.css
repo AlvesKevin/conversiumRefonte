@@ -233,10 +233,9 @@ a:hover{
   margin: 50px auto;
 }
 
-#containerContact  span{
+#containerContact span{
   color: #DDF164;
 }
-
 
 #containerContact img{
   width: 39px;
@@ -389,6 +388,14 @@ a:hover{
   width: 860px;
   font-size: 25px;
   margin-right: 50px;
+}
+
+#texteMethodeGenerationLead h2{
+  background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 #containerVignetteGenerationLead{

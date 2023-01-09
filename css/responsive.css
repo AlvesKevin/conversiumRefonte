@@ -46,6 +46,9 @@
         background-size: contain;
         width: 30px;
         height: 20px;
+        margin: 0;
+        margin-top: 35px;
+        margin-right: 20px;
     }
 
     #contactezNousNavBar img {
@@ -58,6 +61,11 @@
 }
 
 @media (max-width: 1300px) {
+
+    #containerVignette{
+        width: 70%;
+    }
+
     #vignette1 {
         height: 410px;
     }
@@ -113,22 +121,297 @@
         height: 90vh;
     }
 
+    #containerVignette{
+        width: 48%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 50px auto;
+    }
+
     #vignette1 {
-        height: 350px;
+        width: 367px;
+        height: 394px;
+        background-image: url("/img/vignette1Mobile.png");
+        margin-top: 20px;
     }
 
     #vignette2 {
-        height: 360px;
+        width: 367px;
+        height: 394px;
+        background-image: url("/img/vignette2Mobile.png");
         margin-top: 20px;
     }
 
     #vignette3 {
-        height: 380px;
+        width: 367px;
+        height: 394px;
+        background-image: url("/img/vignette3Mobile.png");
+        margin-top: 20px;
     }
 
     #solutionTitre{
         width: 100%;
     }
+
+    #containerContact{
+        width: 90%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #containerVignette{
+        width: 74%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 50px auto;
+    }
+
+    #vignette1 {
+        width: 480px;
+        height: 400px;
+        background-image: url("/img/vignette1Mobile.png");
+        margin-top: 10px;
+    }
+
+    #vignette2 {
+        width: 480px;
+        height: 400px;
+        background-image: url("/img/vignette2Mobile.png");
+        margin-top: 10px;
+    }
+
+    #vignette3 {
+        width: 480px;
+        height: 400px;
+        background-image: url("/img/vignette3Mobile.png");
+        margin-top: 10px;
+    }
+
+    #containerTexte h2{
+        width: 100%;
+    }
+}
+
+@media (max-width: 532px) {
+    #logoConversium{
+        padding-left: 0;
+        width: 200px;
+        height: 35px;
+    }
+
+    #contactezNousNavBar {
+        background-image: url("/img/burgerMenu.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 20px;
+        height: 15px;
+        margin: 0;
+        margin-top: 35px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 569px) {
+    #containerContact{
+        width: 80%;
+        height: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 375px) {
+    #containerVignette{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 50px auto;
+    }
+
+    #vignette1 {
+        width: 367px;
+        height: 394px;
+        background-image: url("/img/vignette1Mobile.png");
+        margin-top: 0;
+    }
+
+    #vignette2 {
+        width: 367px;
+        height: 394px;
+        background-image: url("/img/vignette2Mobile.png");
+        margin-top: 0;
+    }
+
+    #vignette3 {
+        width: 367px;
+        height: 394px;
+        background-image: url("/img/vignette3Mobile.png");
+        margin-top: 0;
+
+    }
 }
 
 /*------------------------ Qui sommes-nous -------------------------*/
+
+@media (max-width: 1274px) {
+    #containerMethodologie{
+        width: 50%;
+    }
+}
+
+@media (max-width: 915px) {
+    #containerNotreHistoire img{
+        display: none;
+    }
+}
+
+@media (max-width: 746px) {
+
+    #containerMethodologie{
+        width: 80%;
+    }
+}
+
+@media (max-width: 435px) {
+    #containerMethodologie{
+        width: 100%;
+    }
+}
+
+/*------------------------ Generation de lead -------------------------*/
+
+
+@media (max-width: 1280px) {
+    #containerMethodeGenerationLead{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 746px) {
+    #containerMethodeGenerationLead{
+        width: 100%;
+    }
+
+    #texteMethodeGenerationLead{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .vignetteLead{
+        margin: 20px auto;
+    }
+
+    h2{
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    #containerTexteGenerationLead h2{
+        font-size: 25px;
+    }
+
+    #containerTexteGenerationLead p{
+        font-size: 20px;
+    }
+
+    #contactGenerationLead p{
+        font-size: 25px;
+    }
+}
+
+
+/*------------------------ Generation de lead -------------------------*/
+
+@media (max-width: 1380px) {
+    .vignetteWeb h2 {
+        font-size: 40px;
+    }
+
+    .vignetteWeb p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1054px) {
+    .vignetteWeb h2 {
+        font-size: 35px;
+        padding-top: 50px;
+    }
+
+    .vignetteWeb p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 605px) {
+    .vignetteWeb h2 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+
+    .vignetteWeb p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 523px) {
+    .vignetteWeb h2 {
+        font-size: 25px;
+        padding-top: 50px;
+    }
+
+    .vignetteWeb p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 413px) {
+
+    .vignetteWeb{
+        height: 300px;
+    }
+
+    .vignetteWeb span{
+        font-size: 40px;
+    }
+
+    .vignetteWeb h2 {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+
+    .vignetteWeb p {
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
