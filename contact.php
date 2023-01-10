@@ -79,37 +79,43 @@
         </div>
         <input id="buttonForm" type="submit" value="Envoyer >" name="envoyer">
     </form>
-    <?php
-    //si le bouton envoyer a été cliqué
-    if (isset($_POST["envoyer"])){
-        //on recupère le nom
-        $nom = $_POST["nom"];
-        //on recupère le prenom
-        $prenom = $_POST["prenom"];
-        //on recupère le téléphone
-        $telephone = $_POST["telephone"];
-        //on recupère l'entreprise'
-        $entreprise = $_POST["entreprise"];
-        //on recupère l'adresse email
-        $email = $_POST["email"];
-        //on recupère la demande
-        $demande = $_POST["demande"];
+    <script>
+        var form = document.getElementById("containerFormulaire");
+        var nom = document.getElementById("nom");
+        var prenom = document.getElementById("prenom");
+        var telephone = document.getElementById("telephoneForm");
+        var entreprise = document.getElementById("entreprise");
+        var email = document.getElementById("email");
+        var message = document.getElementById("demande");
 
-        $to = "kevin.alves72100@gmail.com";
-        $headers = "From:" . $nom . " " . $prenom ." " . $email;
-        //on envoie le message avec la fonction mail
-        if (mail($to, $telephone, $entreprise,$demande,$headers))
-        //si le message a été envoyé, on le confirme
-        {
-            echo " ton message est bien envoyé.";
-        }
-        //sinon on n'affiche un message d'erreur
-        else
-        {
-            echo "Une erreur s'est produite";
-        }
-    }
-    ?>
+        form.onsubmit = function(event) {
+            event.preventDefault();
+            var data = {
+                "nom": nom.value,
+                "prenom": prenom.value,
+                "telephone": telephone.value,
+                "entreprise": entreprise.value,
+                "email": email.value,
+                "message": message.value,
+            };
+
+            var url = "https://script.google.com/macros/s/AKfycbzm_4-Mr5csJzb0CN1mr2JwKVGFC81lgOJYpg6gCZ7MlfovNmUp6Ff5FdrmoRBW2qJb/exec";
+            var params = "?" + Object.keys(data).map(function(key) {
+                return key + "=" + encodeURIComponent(data[key]);
+            }).join("&");
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", url + params, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert("Données envoyées avec succès!");
+                } else if (xhr.readyState === 4 && xhr.status !== 200) {
+                    alert("Une erreur s'est produite lors de l'envoi des données. Veuillez réessayer plus tard.");
+                }
+            }
+            xhr.send();
+        };
+    </script>
 </div>
 
 <footer>
