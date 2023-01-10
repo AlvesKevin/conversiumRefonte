@@ -37,18 +37,10 @@
 
     #logoConversium {
         margin: 30px auto;
-        padding-left: 100px;
     }
 
     #contactezNousNavBar {
-        background-image: url("/img/burgerMenu.png");
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 30px;
-        height: 20px;
-        margin: 0;
-        margin-top: 35px;
-        margin-right: 20px;
+        display: none;
     }
 
     #contactezNousNavBar img {
@@ -200,11 +192,6 @@
 }
 
 @media (max-width: 532px) {
-    #logoConversium{
-        padding-left: 25px;
-        width: 220px;
-        height: 40px;
-    }
 
     #contactezNousNavBar {
         background-image: url("/img/burgerMenu.png");
