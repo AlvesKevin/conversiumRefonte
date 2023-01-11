@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <form id="containerFormulaire" method="post">
+    <form id="containerFormulaire">
         <div>
             <label for="nom">Nom :</label><br>
             <input type="text" id="nom" name="nom"><br>
@@ -79,42 +79,24 @@
         </div>
         <input id="buttonForm" type="submit" value="Envoyer >" name="envoyer">
     </form>
-    <script>
-        var form = document.getElementById("containerFormulaire");
-        var nom = document.getElementById("nom");
-        var prenom = document.getElementById("prenom");
-        var telephone = document.getElementById("telephoneForm");
-        var entreprise = document.getElementById("entreprise");
-        var email = document.getElementById("email");
-        var message = document.getElementById("demande");
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./jquery.serializeObject.min.js"></script>
+    <script type="text/javascript">
+        var $form = $('form#containerFormulaire'),
+            url = 'https://script.google.com/macros/s/AKfycbyU6Za0oCKwQ78-nKvHfJnxyqcljXQjsYwc_eOyoMuP0AHB6EoOwZELwoeXEHdVX9axuA/exec';
 
-        form.onsubmit = function(event) {
-            event.preventDefault();
-            var data = {
-                "nom": nom.value,
-                "prenom": prenom.value,
-                "telephone": telephone.value,
-                "entreprise": entreprise.value,
-                "email": email.value,
-                "message": message.value,
-            };
+        $('#submit-form').on('click', function (e){
+           e.preventDefault();
+           var jqxhr = $.ajax({
+               url: url,
+               method: "GET",
+               dataType: "json",
+               data: $form.serializeObject()
+           }).done( function (){
 
-            var url = "https://script.google.com/macros/s/AKfycbzmV4cEq1_KBbd0_Yzwm9ASjjV4OsI9tiw6hPbPNHPw_he78eZ4WigPZL7_dVapJ3nvdw/exec";
-            var params = "?" + Object.keys(data).map(function(key) {
-                return key + "=" + encodeURIComponent(data[key]);
-            }).join("&");
-
-            var xhr = new XMLHttpRequest();
-            xhr.open("GET", url + params, true);
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    alert("Données envoyées avec succès!");
-                } else if (xhr.readyState === 4 && xhr.status !== 200) {
-                    alert("Une erreur s'est produite lors de l'envoi des données. Veuillez réessayer plus tard.");
-                }
-            }
-            xhr.send();
-        };
+           }
+           );
+        });
     </script>
 </div>
 
