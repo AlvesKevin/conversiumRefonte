@@ -93,9 +93,7 @@
                dataType: "json",
                data: $form.serializeObject()
            }).done( function (){
-
-           }
-           );
+                });
         });
     </script>
 </div>

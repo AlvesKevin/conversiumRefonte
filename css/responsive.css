@@ -216,6 +216,11 @@
 }
 
 @media (max-width: 375px) {
+
+    #copyright{
+        font-size: 10px;
+    }
+
     #containerVignette{
         width: 80%;
         display: flex;
