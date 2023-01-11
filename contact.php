@@ -99,7 +99,7 @@
                 "message": message.value,
             };
 
-            var url = "https://script.google.com/macros/s/AKfycbzm_4-Mr5csJzb0CN1mr2JwKVGFC81lgOJYpg6gCZ7MlfovNmUp6Ff5FdrmoRBW2qJb/exec";
+            var url = "https://script.google.com/macros/s/AKfycbzmV4cEq1_KBbd0_Yzwm9ASjjV4OsI9tiw6hPbPNHPw_he78eZ4WigPZL7_dVapJ3nvdw/exec";
             var params = "?" + Object.keys(data).map(function(key) {
                 return key + "=" + encodeURIComponent(data[key]);
             }).join("&");
