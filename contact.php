@@ -85,7 +85,7 @@
         var $form = $('form#containerFormulaire'),
             url = 'https://script.google.com/macros/s/AKfycbyU6Za0oCKwQ78-nKvHfJnxyqcljXQjsYwc_eOyoMuP0AHB6EoOwZELwoeXEHdVX9axuA/exec';
 
-        $('#submit-form').on('click', function (e){
+        $('#buttonForm').on('click', function (e){
            e.preventDefault();
            var jqxhr = $.ajax({
                url: url,
