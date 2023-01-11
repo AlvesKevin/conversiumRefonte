@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <form id="test-form">
+    <form id="containerFormulaire">
         <div>
             <label for="nom">Nom :</label><br>
             <input type="text" id="nom" name="nom"><br>
@@ -77,15 +77,15 @@
             <label for="demande">Formulez votre demande :</label><br>
             <textarea id="demande" name="demande" rows="5" cols="50"></textarea><br>
         </div>
-        <input id="submit-form" type="submit" value="Envoyer >" name="envoyer">
+        <input id="buttonForm" type="submit" value="Envoyer >" name="envoyer">
     </form>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="./jquery.serializeObject.min.js"></script>
     <script type="text/javascript">
-        var $form = $('form#test-form'),
+        var $form = $('form#containerFormulaire'),
             url = 'https://script.google.com/macros/s/AKfycbwjcr7eYWzoUD6pgAukhn6EBlFrgl9N1JQPtF6HAaFBiJhr1tUBxEyDZ54pjwmI4fEDVw/exec';
 
-        $('#submit-form').on('click', function (e){
+        $('#buttonForm').on('click', function (e){
            e.preventDefault();
            var jqxhr = $.ajax({
                url: url,
@@ -93,6 +93,7 @@
                dataType: "json",
                data: $form.serializeObject()
            }).done( function (){
+
            }
            );
         });
