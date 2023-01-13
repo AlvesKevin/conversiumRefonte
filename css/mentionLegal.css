@@ -1,0 +1,83 @@
+html body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Istok Web', sans-serif;
+    overflow-x: hidden;
+    color: white;
+}
+
+.texte{
+    width: 1200px;
+    margin: 100px auto;
+}
+
+.logoHeader{
+    width: 330px;
+    height: 50px;
+    margin: 40px;
+}
+
+.texteNav{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    height: 30px;
+    justify-content: space-between;
+    right: 300px;
+    top: 45px;
+    color: white;
+    font-size: 15px;
+}
+
+#texte1{
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#texte2{
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#texte3{
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#texte4{
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#texte5{
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#texte6{
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#numeroTelephoneHeader{
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-top: 4px;
+}
+
+.ligne{
+    position: absolute;
+    top: 120px;
+    left: 40px;
+    width: 95%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.66);
+}
+
+h1{
+    background: linear-gradient(90deg, #DDF164 20.52%, rgba(189, 255, 0, 0.87) 49.58%, rgba(255, 92, 0, 0.76) 70.3%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
